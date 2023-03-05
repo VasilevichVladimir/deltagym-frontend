@@ -1,7 +1,7 @@
 const colors = {
     yellow: '#ffd703',
-    textGray: '#3b444b',
-    textWhite:'#ffffff',
+    gray: '#3b444b',
+    white:'#ffffff',
     inputBorder: '#ced0d2',
     shadow: '#bfbfbf'
   }

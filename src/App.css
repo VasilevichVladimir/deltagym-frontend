@@ -51,3 +51,13 @@
   font-family: 'Montserrat-Black';
   src: url('./fonts/Montserrat-Black.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Montserrat-BlackItalic';
+  src: url('./fonts/Montserrat-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBoldItalic';
+  src: url('./fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+}

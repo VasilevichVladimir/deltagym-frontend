@@ -11,13 +11,16 @@ export const Button = ({ text }: ButtonProps) => {
 
 const StyledButton = styled.button`
   height: 7.5vh;
-  padding-left: 8vh;
-  padding-right: 8vh;
+  padding-left: 3.9vw;
+  padding-right: 3.9vw;
   font-size: 2.4vh;
   font-family: 'Montserrat-Bold';
   text-align: center;
-  color: ${colors.textWhite};
+  color: ${colors.white};
   background-color: ${colors.yellow};
   border: none;
   box-shadow: 0vh 0.5vh 0.5vh ${colors.shadow};
+  :hover {
+    background-color: ${colors.gray};
+  }
 `

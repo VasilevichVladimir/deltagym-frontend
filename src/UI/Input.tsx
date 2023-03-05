@@ -24,11 +24,11 @@ const Label = styled.label`
 `
 const StyledInput = styled.input`
   display: block;
-  width: 65vh;
+  width: 31.7vw;
   margin-top: 0.7vh;
   font-size: 2.4vh;
   font-family: 'Montserrat-Bold';
-  color: ${colors.textGray};
+  color: ${colors.gray};
   border-top: 0;
   border-left: 0;
   border-right: 0;
