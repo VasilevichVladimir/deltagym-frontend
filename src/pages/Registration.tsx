@@ -71,7 +71,7 @@ export const Registration = () => {
   )
 }
 
-export const RegistrationWrapper = styled.div`
+const RegistrationWrapper = styled.div`
   display: flex;
   width: 100vw;
   height: 100vh;
