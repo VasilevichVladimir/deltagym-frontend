@@ -1,8 +1,5 @@
-import styled from 'styled-components'
-import { Input } from '../UI/Input'
-import { Button } from '../UI/Button'
 import dumbbell from '../images/dumbbell.png'
-import Icon from '../components/Icon'
+import Icon from '../components/UI/Icon'
 import { Link } from 'react-router-dom'
 import {
   LeftSide,
@@ -15,11 +12,14 @@ import {
   LogoWrapper,
   ContactWrapper,
   ContactText,
-} from './Registration'
+  RegistrationWrapper,
+  Button,
+  Input,
+} from '../components/UI/Registration/RegistrationComponents'
 
 export const Authorization = () => {
   return (
-    <AuthorizationWrapper>
+    <RegistrationWrapper>
       <LeftSide>
         <LogoWrapper>
           <LogoName>DeltaGym</LogoName>
@@ -71,12 +71,6 @@ export const Authorization = () => {
           </LinkText>
         </Link>
       </RightSide>
-    </AuthorizationWrapper>
+    </RegistrationWrapper>
   )
 }
-
-const AuthorizationWrapper = styled.div`
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-`
