@@ -38,11 +38,6 @@
 } */
 
 @font-face {
-  font-family: 'Montserrat-SemiBold';
-  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Montserrat-Bold';
   src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
 }
@@ -55,9 +50,4 @@
 @font-face {
   font-family: 'Montserrat-BlackItalic';
   src: url('./fonts/Montserrat-BlackItalic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat-SemiBoldItalic';
-  src: url('./fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
 }

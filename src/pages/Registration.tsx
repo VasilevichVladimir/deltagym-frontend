@@ -1,6 +1,8 @@
 import dumbbell from '../images/dumbbell.png'
 import Icon from '../components/UI/Icon'
 import { Link } from 'react-router-dom'
+import { Button } from '../components/UI/registration/Button'
+import { Input } from '../components/UI/registration/Input'
 import {
   RegistrationWrapper,
   LeftSide,
@@ -13,9 +15,7 @@ import {
   LinkText,
   Text,
   Image,
-  Button,
-  Input,
-} from '../components/UI/Registration/RegistrationComponents'
+} from '../styles/registration/registration'
 
 export const Registration = () => {
   return (
@@ -29,18 +29,18 @@ export const Registration = () => {
           style={{
             color: 'white',
             textAlign: 'left',
-            marginRight: '20vw',
+            marginRight: '307.2px',
           }}
         >
           ВРЕМЯ БЫТЬ
           <br /> В ФОРМЕ!
         </Text>
         <Image src={dumbbell} />
-        <ContactWrapper style={{ marginBottom: '0.7vh' }}>
+        <ContactWrapper style={{ marginBottom: '5.25px' }}>
           <Icon icon='clock' size={15} />
           <ContactText>Работаем ежедневно: с 8:00 до 21:00</ContactText>
         </ContactWrapper>
-        <ContactWrapper style={{ marginBottom: '0.7vh' }}>
+        <ContactWrapper style={{ marginBottom: '5.25px' }}>
           <Icon icon='location2' size={15} />
           <ContactText>Г. Минск, ул. Прушинских 88, 3 этаж</ContactText>
         </ContactWrapper>
@@ -50,28 +50,30 @@ export const Registration = () => {
         </ContactWrapper>
       </LeftSide>
       <RightSide>
-        <Text>РЕГИСТРАЦИЯ</Text>
-        <Input labelText='Имя' style={{ marginBottom: '5.5vh' }} />
-        <Input labelText='Фамилия' style={{ marginBottom: '5.5vh' }} />
-        <Input labelText='Логин' style={{ marginBottom: '5.5vh' }} />
+        <Text style={{ marginBottom: '30px' }}>РЕГИСТРАЦИЯ</Text>
+        <Input labelText='Имя' style={{ marginBottom: '41.25px' }} />
+        <Input labelText='Фамилия' style={{ marginBottom: '41.25px' }} />
+        <Input labelText='Логин' style={{ marginBottom: '41.25px' }} />
         <Input
           labelText='Пароль'
           type='password'
-          style={{ marginBottom: '5.5vh' }}
+          style={{ marginBottom: '41.25px' }}
         />
         <Input
           labelText='Повторите пароль'
           type='password'
-          style={{ marginBottom: '5.5vh' }}
+          style={{ marginBottom: '41.25px' }}
         />
-        <Button text='ЗАРЕГИСТРИРОВАТЬСЯ' />
+        <Link to='/userProfile'>
+          <Button text='ЗАРЕГИСТРИРОВАТЬСЯ' />
+        </Link>
         <Link
-          style={{ textDecoration: 'none', marginTop: '6vh' }}
+          style={{ textDecoration: 'none', marginTop: '45px' }}
           to='/authorization'
         >
           <LinkText
             style={{
-              borderBottom: 'solid 0.2vh',
+              borderBottom: 'solid 1.5px',
             }}
           >
             Уже есть аккаунт? Авторизируйтесь

@@ -2,7 +2,7 @@ import './App.css'
 import { Registration } from './pages/Registration'
 import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom'
 import { Authorization } from './pages/Authorization'
-import { UserPage } from './pages/UserPage'
+import { UserProfile } from './pages/UserProfile'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route path='/' element={<Navigate to='/authorization' replace />} />
         <Route path='/registration' element={<Registration />} />
         <Route path='/authorization' element={<Authorization />} />
-        <Route path='/userpage' element={<UserPage />} />
+        <Route path='/userProfile/*' element={<UserProfile />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,5 +1,5 @@
 import IcoMoon, { IconProps } from 'react-icomoon'
-import iconSet from '../selection.json'
+import iconSet from '../../assets/selection.json'
 import colors from '../../constants/colors'
 
 const Icon = ({ icon, color, size }: IconProps) => (

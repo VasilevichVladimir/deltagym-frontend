@@ -1,35 +1,40 @@
+import { FC, HTMLAttributes } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../../constants/colors'
 
-type Props = {
+type ButtonProps = {
   title: string
-  index: number
-  setSelectedTab: (index: number) => void
+  link: string
 }
 
-const TabTitle = ({ title, setSelectedTab, index }: Props) => {
+export const SidebarButton: FC<
+  ButtonProps & HTMLAttributes<HTMLButtonElement>
+> = ({ title, link }: ButtonProps) => {
   return (
-    <TabTitleWrapper>
-      <Button onClick={() => setSelectedTab(index)}>{title}</Button>
-    </TabTitleWrapper>
+    <ButtonWrapper>
+      <Link to={link}>
+        <Button>{title}</Button>
+      </Link>
+    </ButtonWrapper>
   )
 }
 
-const TabTitleWrapper = styled.li`
+const ButtonWrapper = styled.li`
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 90%;
-  height: 20%;
-  margin-bottom: 2%;
+  width: 273.4px;
+  height: 86.9px;
+  margin-bottom: 15px;
   user-select: none;
   list-style: none;
 `
 
 const Button = styled.button`
-  width: 100%;
-  height: 98%;
-  font-size: 2.4vh;
+  width: 273.4px;
+  height: 86.9px;
+  font-size: 18px;
   font-family: 'Montserrat-Bold';
   text-align: center;
   color: ${colors.white};
@@ -45,5 +50,3 @@ const Button = styled.button`
   }
   transition-duration: 0.4s;
 `
-
-export default TabTitle

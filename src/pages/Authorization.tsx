@@ -1,21 +1,21 @@
 import dumbbell from '../images/dumbbell.png'
 import Icon from '../components/UI/Icon'
 import { Link } from 'react-router-dom'
+import { Button } from '../components/UI/registration/Button'
+import { Input } from '../components/UI/registration/Input'
 import {
+  RegistrationWrapper,
   LeftSide,
-  RightSide,
-  LogoName,
-  Text,
-  LinkText,
-  Image,
-  LogoFooter,
   LogoWrapper,
+  LogoName,
+  LogoFooter,
   ContactWrapper,
   ContactText,
-  RegistrationWrapper,
-  Button,
-  Input,
-} from '../components/UI/Registration/RegistrationComponents'
+  RightSide,
+  LinkText,
+  Text,
+  Image,
+} from '../styles/registration/registration'
 
 export const Authorization = () => {
   return (
@@ -29,18 +29,18 @@ export const Authorization = () => {
           style={{
             color: 'white',
             textAlign: 'left',
-            marginRight: '20vw',
+            marginRight: '307.2px',
           }}
         >
           ВРЕМЯ БЫТЬ
           <br /> В ФОРМЕ!
         </Text>
         <Image src={dumbbell} />
-        <ContactWrapper style={{ marginBottom: '0.7vh' }}>
+        <ContactWrapper style={{ marginBottom: '5.25px' }}>
           <Icon icon='clock' size={15} />
           <ContactText>Работаем ежедневно: с 8:00 до 21:00</ContactText>
         </ContactWrapper>
-        <ContactWrapper style={{ marginBottom: '0.7vh' }}>
+        <ContactWrapper style={{ marginBottom: '5.25px' }}>
           <Icon icon='location2' size={15} />
           <ContactText>Г. Минск, ул. Прушинских 88, 3 этаж</ContactText>
         </ContactWrapper>
@@ -50,21 +50,23 @@ export const Authorization = () => {
         </ContactWrapper>
       </LeftSide>
       <RightSide>
-        <Text style={{ marginBottom: '8vh' }}>АВТОРИЗАЦИЯ</Text>
-        <Input labelText='Логин' style={{ marginBottom: '5.5vh' }} />
+        <Text style={{ marginBottom: '30px' }}>АВТОРИЗАЦИЯ</Text>
+        <Input labelText='Логин' style={{ marginBottom: '41.25px' }} />
         <Input
           labelText='Пароль'
           type='password'
-          style={{ marginBottom: '5.5vh' }}
+          style={{ marginBottom: '41.25px' }}
         />
-        <Button text='ВОЙТИ' />
+        <Link to='/userProfile'>
+          <Button text='ВОЙТИ' />
+        </Link>
         <Link
-          style={{ textDecoration: 'none', marginTop: '6vh' }}
+          style={{ textDecoration: 'none', marginTop: '45px' }}
           to='/registration'
         >
           <LinkText
             style={{
-              borderBottom: 'solid 0.2vh',
+              borderBottom: 'solid 1.5px',
             }}
           >
             Нет аккаунта? Зарегистрируйтесь
